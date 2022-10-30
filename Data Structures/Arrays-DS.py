@@ -15,8 +15,7 @@ import sys
 
 def reverseArray(a):
     # Write your code here
-    res = arr[::-1]
-    return res
+    return arr[::-1]
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
