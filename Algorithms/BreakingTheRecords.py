@@ -27,6 +27,7 @@ def breakingRecords(scores):
             low_count += 1
     output.extend([high_count,low_count])
     return output
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
