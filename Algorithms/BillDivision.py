@@ -15,6 +15,7 @@ import sys
 #  3. INTEGER b
 #
 
+
 def bonAppetit(bill, k, b):
     # Write your code here
     bill.pop(k)
@@ -23,7 +24,8 @@ def bonAppetit(bill, k, b):
         return print("Bon Appetit")
     else:
         return print(int(b-needed_amount))
-    
+
+
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
 

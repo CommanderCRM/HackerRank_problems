@@ -18,6 +18,7 @@ import sys
 #  6. INTEGER_ARRAY oranges
 #
 
+
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     # Write your code here
     apple_dist = []
@@ -31,12 +32,13 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
         odist = b + elem
         orange_dist.append(odist)
     for elem in apple_dist:
-        if elem in range(s,t+1):
+        if elem in range(s, t+1):
             apple_counts += 1
     for elem in orange_dist:
-        if elem in range(s,t+1):
+        if elem in range(s, t+1):
             orange_counts += 1
-    return print(apple_counts,orange_counts,sep='\n')
+    return print(apple_counts, orange_counts, sep='\n')
+
 
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()

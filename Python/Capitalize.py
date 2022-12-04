@@ -7,11 +7,14 @@ import re
 import sys
 
 # Complete the solve function below.
+
+
 def solve(s):
     splitted = s.split(" ")
     capitalized = [name.capitalize() for name in splitted]
     res = ' '.join([str(i) for i in capitalized])
     return res
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

@@ -15,13 +15,15 @@ import sys
 #  2. 2D_INTEGER_ARRAY queries
 #
 
+
 def arrayManipulation(n, queries):
     # Write your code here
     arr = [0] * n
     for a, b, k in queries:
         for i in range(a-1, b):
             arr[i] += k
-    return(max(arr))
+    return (max(arr))
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

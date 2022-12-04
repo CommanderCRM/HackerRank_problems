@@ -13,9 +13,11 @@ import sys
 # The function accepts INTEGER_ARRAY a as parameter.
 #
 
+
 def reverseArray(a):
     # Write your code here
     return arr[::-1]
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

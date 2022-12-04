@@ -15,14 +15,16 @@ import sys
 #  2. INTEGER_ARRAY arr
 #
 
+
 def rotateLeft(d, arr):
     # Write your code here
-    for i in range (d):
+    for i in range(d):
         elem = arr[0]
         arr = arr[1:n]
         arr.append(elem)
     return arr
-        
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

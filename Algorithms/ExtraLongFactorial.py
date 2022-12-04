@@ -12,10 +12,12 @@ import sys
 # The function accepts INTEGER n as parameter.
 #
 
+
 def extraLongFactorials(n):
     # Write your code here
     fact = math.factorial(n)
     return print(fact)
+
 
 if __name__ == '__main__':
     n = int(input().strip())

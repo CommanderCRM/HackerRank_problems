@@ -14,11 +14,13 @@ from datetime import datetime
 # The function accepts STRING s as parameter.
 #
 
+
 def timeConversion(s):
     # Write your code here
     in_time = datetime.strptime(s, "%I:%M:%S%p")
     out_time = datetime.strftime(in_time, "%H:%M:%S")
     return out_time
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

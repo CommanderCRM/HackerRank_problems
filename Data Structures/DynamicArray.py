@@ -15,6 +15,7 @@ import sys
 #  2. 2D_INTEGER_ARRAY queries
 #
 
+
 def dynamicArray(n, queries):
     # Write your code here
     arr = [[] for i in range(n)]
@@ -29,6 +30,7 @@ def dynamicArray(n, queries):
             lastAnswer = arr[idx][row[2] % len(arr[idx])]
             answers.append(lastAnswer)
     return answers
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

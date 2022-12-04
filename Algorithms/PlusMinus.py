@@ -12,6 +12,7 @@ import sys
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
+
 def plusMinus(arr):
     # Write your code here
     pos_arr = [x for x in arr if x > 0]
@@ -20,8 +21,9 @@ def plusMinus(arr):
     pos_ratio = len(pos_arr)/n
     neg_ratio = len(neg_arr)/n
     zer_ratio = len(zer_arr)/n
-    return print(pos_ratio,"\n",neg_ratio,"\n",zer_ratio)
-    
+    return print(pos_ratio, "\n", neg_ratio, "\n", zer_ratio)
+
+
 if __name__ == '__main__':
     n = int(input().strip())
 

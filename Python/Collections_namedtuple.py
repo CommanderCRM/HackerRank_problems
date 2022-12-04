@@ -10,6 +10,6 @@ Students = namedtuple('Students', fields)
 for i in range(n):
     student = Students(*input().split())
     marks_sum += int(student.MARKS)
-    
+
 avg = marks_sum/n
-print(round(avg,2))
+print(round(avg, 2))

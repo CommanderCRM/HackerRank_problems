@@ -14,6 +14,7 @@ import datetime
 # The function accepts INTEGER year as parameter.
 #
 
+
 def dayOfProgrammer(year):
     # Write your code here
     if year == 1918:
@@ -28,7 +29,8 @@ def dayOfProgrammer(year):
             return "12.09." + str(year)
         else:
             return "13.09." + str(year)
-    
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

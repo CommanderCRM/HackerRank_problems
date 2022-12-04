@@ -15,14 +15,14 @@ import sys
 #  2. STRING_ARRAY queries
 #
 
+
 def matchingStrings(stringList, queries):
     # Write your code here
     number = []
     for i in range(len(queries)):
         number.append(stringList.count(queries[i]))
     return number
-        
-                
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

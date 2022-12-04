@@ -13,6 +13,7 @@ import sys
 # The function accepts INTEGER_ARRAY grades as parameter.
 #
 
+
 def gradingStudents(grades):
     # Write your code here
     for i in range(len(grades)):
@@ -20,6 +21,7 @@ def gradingStudents(grades):
         if abs(round_up - grades[i]) < 3 and grades[i] >= 38:
             grades[i] = round_up
     return grades
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

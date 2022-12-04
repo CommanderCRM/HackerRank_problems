@@ -16,6 +16,7 @@ import string
 #  2. STRING word
 #
 
+
 def designerPdfViewer(h, word):
     # Write your code here
     len_word = len(word)
@@ -26,7 +27,8 @@ def designerPdfViewer(h, word):
     max_value = max(list_word)
     area = max_value * len_word
     return area
-    
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

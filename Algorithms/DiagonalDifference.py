@@ -13,20 +13,21 @@ import sys
 # The function accepts 2D_INTEGER_ARRAY arr as parameter.
 #
 
+
 def diagonalDifference(arr):
     # Write your code here
     lrsum = 0
     rlsum = 0
-    for i in range(0,n):
-        for j in range(0,n):
+    for i in range(0, n):
+        for j in range(0, n):
             if i == j:
                 lrsum += arr[i][j]
             if i == n - j - 1:
                 rlsum += arr[i][j]
-            
 
     ad = abs(lrsum-rlsum)
     return ad
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
